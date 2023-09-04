@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: burlywood;
+}
+
+.container{
+    background-color: white;
+
+    /* for sizing of box */
+    width: 90vmin;
+    padding: 50px 30px;
+
+    /* for centering */
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top:50%;
+
+    border-radius: 10px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    gap: 15px;
+}
+
+button{
+    height: 28px;
+    width: 28px;
+
+    display: grid;
+    place-items:center;
+
+    border-radius: 3px;
+    border: none;
+    
+    background-color: white;
+    outline: none;
+    color: black;
+}
+
+select{
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="color"]{
+    -webkit-appreance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    
+}
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+}
+
+input[type="color"]::-moz-color-swatch{
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+}
+
+#input-text{
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    height: 50vh;
+   
+
+}
+.active{
+    background-color: rgb(217, 217, 231);
+}

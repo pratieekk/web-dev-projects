@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title"> SURVEY-FORM</h1>
+    <p id="description">thankyou for your valuable time</p>
+    <fieldset>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name: <input id="name" type ="text" required placeholder="enter your name"></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="enter your email"></label>
+            <label for="number" id="number-label"> Age(optional):  <input id="number" type="number" min="13" max="65" placeholder="age"></label>
+
+            <label for="dropdown">Enter your proffession
+            <select id="dropdown">
+                    <option>select an options</option>
+                    <option>schooler</option>
+                    <option>college student</option>
+                    <option>Part-time job</option>
+                    <option>full-time Job</option>
+                    <option>Business</option>
+                    <option>others</option>
+            </select>
+        </label>
+        <label>From where do you hear about us?</label>
+            <label for="rd-1"><input id="rd-1" type="radio" class="inline">social media</label>
+            <label for="rd-2"><input id="rd-2" type="radio" class="inline">News-feeds</label>
+            <label for="rd-3"><input id="rd-3" type="radio" class="inline">Web-site</label>
+
+        <label for="dropdown">which opersting system are you using?
+            <select id="dropdowm">
+                <option>select an option</option>
+                <option>windows</option>
+                <option>IOS</option>
+                <option>linux</option>
+                <option>android</option>
+                <option>preffer not to say</option>
+            </select>
+        </label>
+        <label>select the sites which you use every day (can be more than one) 
+            <label><input id="yt" type="checkbox" class="inline">youtube</label>
+            <label><input type="checkbox" class="inline">Instagram</label>
+            <label><input type="checkbox" class="inline">whatsapp</label>
+            <label><input type="checkbox" class="inline">facebook</label>
+            <label><input type="checkbox" class="inline">pinterest</label>
+            <label><input type="checkbox" class="inline">Netfilx</label>
+            <label><input type="checkbox" class="inline">amazon prime</label>
+        </label>
+        <label for="comment">Any other sites please mention ! <textarea id="comment" rows="6" cols="40" placeholder="Enter your comments here..."></textarea></label>
+        <input id="submit" type="submit" value="submit">
+       </fieldset>
+    </form>
+    
+</body>
+</html>
